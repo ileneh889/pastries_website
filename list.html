@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>承繼 CHENG JI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      font-family: "Montserrat", "Noto Sans TC", sans-serif;
+    }
+
+    .logo {
+      height: 80px;
+    }
+
+    a {
+      text-decoration: none;
+      padding-inline: 0;
+    }
+
+    .nav-btn-hover {
+      border: 1.6px solid transparent;
+      transition: all 0.5s;
+    }
+
+    .nav-btn-hover:hover {
+      border-bottom: 1.6px solid #CFB68F;
+
+    }
+
+    .obj-fit {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.5s;
+    }
+
+    .obj-fit:hover {
+      /* transform: translateY(10px); */
+      scale: 1.1;
+    }
+
+
+    .h-card {
+      height: 350px;
+    }
+
+    .shop-bg {
+      background-image: url(img/index/shop04.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    footer p {
+      font-weight: 200;
+      font-size: 0.8rem;
+    }
+
+    .to-top {
+      width: 50px;
+      height: 50px;
+      opacity: 0.5;
+      transition: all 0.5s;
+    }
+
+    .to-top:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column h-100 ">
+  <!-- to-the-top -->
+  <div
+    class="position-fixed to-top bg-secondary d-flex justify-content-center align-items-center end-0 bottom-0 rounded-circle m-3">
+    <a href="#top"><i class="bi bi-arrow-up-circle fs-3 text-white"></i></a>
+  </div>
+  <!-- header -->
+  <div class="container" id="top">
+    <header class="blog-header py-1 px-2">
+      <div class="row flex-nowrap justify-content-between align-items-center ">
+        <!-- left sec-->
+        <div class="col-4 d-flex pt-1 gap-3">
+          <a class="link-secondary" href="#"><i class="bi bi-globe2"></i></a>
+          <a class="link-secondary" href="#"><i class="bi bi-currency-dollar"></i></i></a>
+        </div>
+        <!-- logo -->
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="index.html"><img class="logo" src="img\logo.webp" alt="logo"></a>
+        </div>
+        <!-- right sec -->
+        <div class="col-4 d-flex justify-content-end align-items-center gap-4">
+          <a class="link-secondary" href="#signIn" data-bs-toggle="modal" data-bs-target="#signIn"><i
+              class="bi bi-person-circle"></i></a>
+          <a class="link-secondary" href="#contact" data-bs-toggle="modal" data-bs-target="#contact"><i
+              class="bi bi-menu-up"></i></a>
+          <a class="link-secondary position-relative" href="#">
+            <i class="bi bi-cart "></i>
+            <!-- signal -->
+            <div class="position-absolute d-flex justify-content-center align-items-center"
+              style="width:12px; height:12px ;border-radius: 50%; background-color: #CFB68F; color: white;top: 0px; right: -5px;">
+              <p style="font-size: 0.5rem;">4</p>
+            </div>
+          </a>
+          <a class="link-secondary" href="#"><i class="bi bi-search"></i></i></i></a>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly ">
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="index.html">承繼 | CHENG JI</a></li>
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="list.html">所有商品</a></li>
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="season.html">期間限定</a></li>
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="big_puchase.html">大宗採購</a></li>
+            <li class="nav-item dropdown nav-btn-hover">
+              <a class="nav-link dropdown-toggle" href="team.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                關於承繼
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="team.html">公司資訊</a></li>
+                <li><a class="dropdown-item" href="team.html">團隊介紹</a></li>
+                <li><a class="dropdown-item" href="team.html">品牌概念店</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown nav-btn-hover">
+              <a class="nav-link dropdown-toggle" href="q&a.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                常見問題
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="q&a.html">商品保存/最佳賞味方式</a></li>
+                <li><a class="dropdown-item" href="q&a.html">產品訂購問題</a></li>
+                <li><a class="dropdown-item" href="q&a.html">運費計算方式</a></li>
+              </ul>
+            </li>
+            <li class="p-2 link-secondary nav-btn-hover"><a href="member.html">承繼會員</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- breadcrumb-->
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb px-5">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item active" aria-current="page">所有商品</li>
+    </ol>
+  </nav>
+  <!-- main -->
+  <main class="container-fluid">
+    <div class="row">
+      <!-- sidebar -->
+      <div class="col-3 pt-5 ps-5 d-none d-md-block">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                所有商品
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <a href="">
+                  <p class="fw-light mb-3 ps-3" style="font-size:0.9rem;">精選商品</p>
+                </a>
+                <a href="">
+                  <p class="fw-light mb-3 ps-3" style="font-size:0.9rem;">冷凍宅配</p>
+                </a>
+                <a href="">
+                  <p class="fw-light mb-3 ps-3" style="font-size:0.9rem;">法式甜點</p>
+                </a>
+                <a href="">
+                  <p class="fw-light mb-3 ps-3" style="font-size:0.9rem;">禮盒品項</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                期間限定
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <a href="">
+                  <p class="fw-light mb-3 ps-3" style="font-size:0.9rem;">母親節商品</p>
+                </a>
+                <a href="">
+                  <p class="fw-light mb-3 ps-3" style="font-size:0.9rem;">櫻花系列</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 熱賣商品 -->
+      <div class="col-12 col-md-9">
+        <div class="container pt-5 mb-5">
+          <div class="row ">
+            <!-- card -->
+            <div class="col-12 col-lg-3 h-card mb-3 position-relative">
+              <div class="w-100 h-75 overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/r01.webp" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">重磅肉桂 CINAMON</p>
+                <p class="text-center mb-0 text-secondary fw-bold">NT 120 - NT 150</p>
+              </div>
+              <!-- 期間限定 -->
+              <div class="bg-secondary position-absolute top-0 right-0 fs-6 py-2 px-3">
+                <p class="text-white" style="font-size: 0.6rem;">期間限定</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 h-card  mb-3">
+              <div class="w-100 h-75  overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/hot02.webp" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">月光 MOON</p>
+                <p class="text-center mb-0 text-secondary fw-bold">NT 220 - NT 270</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 h-card  mb-3 position-relative">
+              <div class="w-100 h-75  overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/hot03.webp" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">柚子檸檬蛋糕 LEMON</p>
+                <p class="text-center mb-0 text-secondary fw-bold">NT 200 - NT 220</p>
+              </div>
+              <!-- 期間限定 -->
+              <div class="bg-secondary position-absolute top-0 right-0 fs-6 py-2 px-3">
+                <p class="text-white" style="font-size: 0.6rem;">期間限定</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 h-card  mb-3">
+              <div class="w-100 h-75  overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/hot05.webp" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">焦糖起司餅乾 CARAMEL</p>
+                <p class="text-center mb-0 text-secondary fw-bold">NT 100 - NT 120</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-lg-3 h-card  mb-3">
+              <div class="w-100 h-75  overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/r04.jpg" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">草莓甜心 BERRY</p>
+                <p class="text-center text-secondary mb-0 fw-bold">NT 120 - NT 150</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 h-card  mb-3">
+              <div class="w-100 h-75  overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/hot06.webp" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">月光 MOON</p>
+                <p class="text-center mb-0 text-secondary fw-bold">NT 220 - NT 270</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 h-card  mb-3 position-relative">
+              <div class="w-100 h-75  overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/r03.webp" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">柚子檸檬蛋糕 LEMON</p>
+                <p class="text-center mb-0 text-secondary fw-bold">NT 200 - NT 220</p>
+              </div>
+              <!-- 期間限定 -->
+              <div class="bg-secondary position-absolute top-0 right-0 fs-6 py-2 px-3">
+                <p class="text-white" style="font-size: 0.6rem;">期間限定</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 h-card  mb-3">
+              <div class="w-100 h-75  overflow-hidden">
+                <a href=""><img class="obj-fit rounded" src="img/index/r05.webp" alt=""></a>
+              </div>
+              <div class="d-flex flex-column justify-content-center " style="height: 25%;">
+                <p class="text-center mb-0 fw-light">焦糖起司餅乾 CARAMEL</p>
+                <p class="text-center mb-0 text-secondary fw-bold">NT 100 - NT 120</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- small screen btn -->
+      <button class="btn bg-secondary text-white d-inline-block d-md-none mb-5 m-auto" style="width: 30%;">更多產品<i
+          class="bi bi-arrow-right ms-2"></i></button>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark text-white py-5">
+    <div class="row d-flex justify-content-evenly">
+      <div class="col-md-3 mb-5 mb-md-0">
+        <h5 class="mb-3">CONTACT</h5>
+        <p>Email：customerservice@cheng-ji.com</p>
+        <p>客服時間： 10：00 ～ 18：00</p>
+        <p>電話：02-2718-2848</p>
+        <div class="mt-4">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"> <i class="bi bi-threads"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-5 mb-md-0">
+        <h5 class="mb-3">CONCEPT STORES</h5>
+        <p>地址：台北市松山區興安街222號1樓</p>
+        <p>門市電話：02-2514-0758</p>
+        <p>營業時間：週三至週日 12：00～19：00</p>
+      </div>
+      <div class="col-md-3 mb-5 mb-md-0">
+        <h5 class="mb-3">ABOUT〔CHENG JI〕</h5>
+        <a class="text-white" href="">
+          <p>大宗採購</p>
+        </a>
+        <a class="text-white" href="">
+          <p>外燴服務</p>
+        </a>
+        <a class="text-white" href="">
+          <p>隱私權政策</p>
+        </a>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 w-100 d-flex justify-content-end gap-2 pt-3 px-md-5">
+          <img src="img/index/visa.svg" alt="">
+          <img src="img/index/master.svg" alt="">
+          <img src="img/index/jcb.svg" alt="">
+          <img src="img/index/line.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Modal | sign-in-->
+  <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signInLabel">登入</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">帳號 ACCOUNT<span
+                  class="ps-1 text-danger">*</span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">密碼 PASSWORD<span
+                  class="ps-1 text-danger">*</span></label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">會員登入</button>
+          <button type="button" class="btn btn-primary text-white">繼續瀏覽</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal | 聯絡我們-->
+  <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactLabel">聯絡我們</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">姓名 NAME<span class="ps-1 text-danger">*</span></label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">聯絡方式 MOBILE<span
+                  class="ps-1 text-danger">*</span></label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">提供建議 COMMENT<span
+                  class="ps-1 text-danger">*</span></label>
+              <textarea class="form-control" style="resize: none; height:50px;"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">意見送出</button>
+          <button type="button" class="btn btn-primary text-white">取消返回</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

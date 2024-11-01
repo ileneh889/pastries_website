@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>承繼 CHENG JI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      font-family: "Montserrat", "Noto Sans TC", sans-serif;
+    }
+
+    .logo {
+      height: 80px;
+    }
+
+    a {
+      text-decoration: none;
+      padding-inline: 0;
+    }
+
+    .nav-btn-hover {
+      border: 1.6px solid transparent;
+      transition: all 0.5s;
+    }
+
+    .nav-btn-hover:hover {
+      border-bottom: 1.6px solid #CFB68F;
+
+    }
+
+    .obj-fit {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.5s;
+    }
+
+    .obj-fit:hover {
+      /* transform: translateY(10px); */
+      scale: 1.1;
+    }
+
+
+    .h-card {
+      height: 350px;
+    }
+
+    .shop-bg {
+      background-image: url(img/index/shop04.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-weight: 100;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      font-weight: 200;
+      font-size: 0.8rem;
+    }
+
+    .to-top {
+      width: 50px;
+      height: 50px;
+      opacity: 0.5;
+      transition: all 0.5s;
+    }
+
+    .to-top:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column h-100 ">
+  <!-- to-the-top -->
+  <div
+    class="position-fixed to-top bg-secondary d-flex justify-content-center align-items-center end-0 bottom-0 rounded-circle m-3">
+    <a href="#top"><i class="bi bi-arrow-up-circle fs-3 text-white"></i></a>
+  </div>
+  <!-- header -->
+  <div class="container" id="top">
+    <header class="blog-header py-1 px-2">
+      <div class="row flex-nowrap justify-content-between align-items-center ">
+        <!-- left sec-->
+        <div class="col-4 d-flex pt-1 gap-3">
+          <a class="link-secondary" href="#"><i class="bi bi-globe2"></i></a>
+          <a class="link-secondary" href="#"><i class="bi bi-currency-dollar"></i></i></a>
+        </div>
+        <!-- logo -->
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="index.html"><img class="logo" src="img\logo.webp" alt="logo"></a>
+        </div>
+        <!-- right sec -->
+        <div class="col-4 d-flex justify-content-end align-items-center gap-4">
+          <a class="link-secondary" href="#signIn" data-bs-toggle="modal" data-bs-target="#signIn"><i
+              class="bi bi-person-circle"></i></a>
+          <a class="link-secondary" href="#contact" data-bs-toggle="modal" data-bs-target="#contact"><i
+              class="bi bi-menu-up"></i></a>
+          <a class="link-secondary position-relative" href="#">
+            <i class="bi bi-cart "></i>
+            <!-- signal -->
+            <div class="position-absolute d-flex justify-content-center align-items-center"
+              style="width:12px; height:12px ;border-radius: 50%; background-color: #CFB68F; color: white;top: 0px; right: -5px;">
+              <p style="font-size: 0.5rem;">4</p>
+            </div>
+          </a>
+          <a class="link-secondary" href="#"><i class="bi bi-search"></i></i></i></a>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly ">
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="index.html">承繼 | CHENG JI</a></li>
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="list.html">所有商品</a></li>
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="season.html">期間限定</a></li>
+            <li class="nav-item p-2 link-secondary nav-btn-hover"><a href="big_puchase.html">大宗採購</a></li>
+            <li class="nav-item dropdown nav-btn-hover">
+              <a class="nav-link dropdown-toggle" href="team.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                關於承繼
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="team.html">公司資訊</a></li>
+                <li><a class="dropdown-item" href="team.html">團隊介紹</a></li>
+                <li><a class="dropdown-item" href="team.html">品牌概念店</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown nav-btn-hover">
+              <a class="nav-link dropdown-toggle" href="q&a.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                常見問題
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="q&a.html">商品保存/最佳賞味方式</a></li>
+                <li><a class="dropdown-item" href="q&a.html">產品訂購問題</a></li>
+                <li><a class="dropdown-item" href="q&a.html">運費計算方式</a></li>
+              </ul>
+            </li>
+            <li class="p-2 link-secondary nav-btn-hover"><a href="member.html">承繼會員</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- breadcrumb-->
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb px-5">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">關於承繼</li>
+    </ol>
+  </nav>
+  <!-- main -->
+  <main class="container-fluid py-5">
+    <!-- 團隊介紹 -->
+    <div class="row container mb-5 pb-5 d-flex m-auto">
+      <h5 class="text-center mb-2">TEAM</h5>
+
+      <!-- *1 -->
+      <div class="col-12 col-md-6 py-5">
+        <img class="w-100 mb-4" src="img/M01.webp" alt="">
+        <h5 class="text-secondary">謝思菲</h5>
+        <p class="mb-3">「覺得過人生就像吃一塊巧克力。」剛開始只知道甜甜的，隨著懂的越多，才漸漸發現有太多味道值得細細品嚐。</p>
+        <p class="mb-3">
+          菲律賓出生台北長大，成長過程裡因父母經商而居住過許多不同國家。從小就熱愛文字，喜歡看、喜歡想、喜歡吃，最大的夢想就是能住在誠品裡。畢業後因工作經常旅行，也慢慢接觸到許多有趣的人事物。開始有了念頭，想將美好事物傳遞給喧鬧城市裡忙碌生活的人們。
+        </p>
+        <p>目前正在找尋理念相同的夥伴一起碰撞出新的想法。覺得課程得要能激起漣漪，並非教大家做出一樣的東西，而是引導每個人。就像是種下一顆種子</p>
+      </div>
+      <!-- *2 -->
+      <div class="col-12 col-md-6 py-5">
+        <img class="w-100 mb-4" src="img/M02.webp" alt="">
+        <h5 class="text-secondary">陳佳揚</h5>
+        <p class="mb-3">「紮實的理論基礎是跨越經驗的唯一捷徑」 一句求學期間導師的話，讓烹調的科學理論成了他的信念。</p>
+        <p class="mb-3">
+          在世界排名第八的米其林三星餐廳L'Arpège的工作經驗不只帶來對蔬菜烹調更多的想像，也學到扎實的傳統肉類烹調手法。
+
+          為了精進甜點專業，到法國雷諾特Ecole Lenôtre 主修甜點，並在其兩千人規模的工廠內不同部門實習。
+        </p>
+        <p>求學假期間也利用各種假期到三星餐廳Le Pré Catelan和兩星餐廳Le Grand Véfour實習，並完成了英國W.S.E.T. 葡萄酒與烈酒認證第三級。</p>
+        <p>目前於承繼負責生產與研發，每年仍往返法國進修及從事翻譯相關工作。</p>
+
+      </div>
+
+    </div>
+    <div class="row mt-5 container m-auto">
+      <h5 class="text-center mb-5">ADDRESS</h5>
+      <div class="col-11 w-100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3541189591333!2d121.54382847401558!3d25.055984077802176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab6aaa0212bd%3A0xe94936248716f87c!2z5om_57m8IENIRU5HIEpJ!5e0!3m2!1szh-TW!2stw!4v1714314527350!5m2!1szh-TW!2stw"
+          height="450" allowfullscreen="" loading="lazy" class="w-100"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-dark text-white py-5">
+    <div class="row d-flex justify-content-evenly">
+      <div class="col-md-3 mb-5 mb-md-0">
+        <h5 class="mb-3">CONTACT</h5>
+        <p>Email：customerservice@cheng-ji.com</p>
+        <p>客服時間： 10：00 ～ 18：00</p>
+        <p>電話：02-2718-2848</p>
+        <div class="mt-4">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"> <i class="bi bi-threads"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3 mb-5 mb-md-0">
+        <h5 class="mb-3">CONCEPT STORES</h5>
+        <p>地址：台北市松山區興安街222號1樓</p>
+        <p>門市電話：02-2514-0758</p>
+        <p>營業時間：週三至週日 12：00～19：00</p>
+      </div>
+      <div class="col-md-3 mb-5 mb-md-0">
+        <h5 class="mb-3">ABOUT〔CHENG JI〕</h5>
+        <a class="text-white" href="">
+          <p>大宗採購</p>
+        </a>
+        <a class="text-white" href="">
+          <p>外燴服務</p>
+        </a>
+        <a class="text-white" href="">
+          <p>隱私權政策</p>
+        </a>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 w-100 d-flex justify-content-end gap-2 pt-3 px-md-5">
+          <img src="img/index/visa.svg" alt="">
+          <img src="img/index/master.svg" alt="">
+          <img src="img/index/jcb.svg" alt="">
+          <img src="img/index/line.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal | sign-in-->
+  <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signInLabel">登入</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">帳號 ACCOUNT<span
+                  class="ps-1 text-danger">*</span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">密碼 PASSWORD<span
+                  class="ps-1 text-danger">*</span></label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">會員登入</button>
+          <button type="button" class="btn btn-primary text-white">繼續瀏覽</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal | 聯絡我們-->
+  <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contactLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactLabel">聯絡我們</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">姓名 NAME<span class="ps-1 text-danger">*</span></label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">聯絡方式 MOBILE<span
+                  class="ps-1 text-danger">*</span></label>
+              <input type="email" class="form-control" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">提供建議 COMMENT<span
+                  class="ps-1 text-danger">*</span></label>
+              <textarea class="form-control" style="resize: none; height:50px;"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">意見送出</button>
+          <button type="button" class="btn btn-primary text-white">取消返回</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
