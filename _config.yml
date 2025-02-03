@@ -1,0 +1,30 @@
+# 基本設定
+title: pastries_website
+baseurl: "/pastries_website"  # 如果你的 repository name 就是你的 username.github.io,保持空白
+url: "https://ileneh889.github.io"       # 你的 GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+
+# 處理 Bootstrap 相關文件
+include:
+  - bootstrap-5.1.1
+  - css
+  - scss
+  - img
+
+# Liquid 設定 (避免 Bootstrap 文件的模板語法錯誤)
+liquid:
+  error_mode: warn
+  strict_filters: false
+
+# 排除不需要處理的檔案
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Jekyll 安全模式
+safe: true
