@@ -1,24 +1,28 @@
 # 基本設定
-title: pastries_website
-baseurl: "/pastries_website"  # 如果你的 repository name 就是你的 username.github.io,保持空白
-url: "https://ileneh889.github.io"       # 你的 GitHub Pages URL
+title: Your Site Title
+baseurl: "/pastries_website"  # 你的 repository 名稱
+url: "https://ileneh889.github.io"
 
 # Build settings
 markdown: kramdown
+remote_theme: pages-themes/primer@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
 
-# 處理 Bootstrap 相關文件
+# Liquid 設定
+liquid:
+  error_mode: warn
+  strict_filters: false
+
+# 目錄設定
 include:
   - bootstrap-5.1.1
   - css
   - scss
   - img
 
-# Liquid 設定 (避免 Bootstrap 文件的模板語法錯誤)
-liquid:
-  error_mode: warn
-  strict_filters: false
-
-# 排除不需要處理的檔案
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -26,5 +30,13 @@ exclude:
   - vendor
   - README.md
 
-# Jekyll 安全模式
+# Jekyll 設定
 safe: true
+lsi: false
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
